@@ -2,3 +2,90 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+:root {
+    --main-color: #F5F0EC;
+    --black: #222222; 
+    --font-family-1:'Russo One', sans-serif;
+    --font-family-2:'Sawarabi Gothic', sans-serif;
+}
+
+body{
+    background-color: var(--main-color);
+    position: relative;
+
+}
+.main_button{
+
+}
+.main_button .dot_icon{
+    
+}
+
+.hero_section{
+    position: relative;
+    width: 1920px;
+    height: 935px;
+    background: var(--main-color);
+    padding: 2%;
+}
+.hero_container{
+    padding: 3%;
+    width: 100%;
+
+}
+.hero_left{
+    width: 50%;
+
+}
+.hero_left .hero_title{
+     font-family: 'Russo One', sans-serif;   
+}
+.hero_right{
+
+}
+.hero_right .hero_img{
+
+}
+.hero_middle{
+
+}
+.hero_middle h4{
+
+}
+.hero_middle span{
+
+}
+.hero_bottom_left{
+
+}
+.hero_bottom_left .h6-decorate{
+
+}
+.hero_bottom_left .acc_link{
+
+}
+.hero_bottom_right{
+
+}
+
+
+h2{
+    border-bottom: 2px solid var(--blue);
+}
+
+.container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding:15px;
+    }
+
+button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+    }   
+     
