@@ -1,3 +1,5 @@
+import { bonomali } from "./case-bonomali";
+
 export const site = {
   name: "AJ-entic",
   person: "Arif Jawad",
@@ -17,9 +19,15 @@ export type Project = {
   slug: string; title: string; category: string; year: string; hue: number;
   summary: string; role: string; stack: string[];
   problem: string; architecture: string[]; results: { v: string; l: string }[];
+  // Optional long-form case study fields
+  status?: string; cover?: CaseImage; sections?: CaseSection[]; decisions?: Decision[];
 };
+export type CaseImage = { src: string; alt: string; w: number; h: number };
+export type CaseSection = { title: string; intro?: string; points?: string[]; image?: CaseImage };
+export type Decision = { topic: string; chose: string; why: string; cost: string };
 
 export const projects: Project[] = [
+  bonomali,
   {
     slug: "payment-orchestration", title: "Payment Orchestration", category: "Payments", year: "2024", hue: 75,
     summary: "One routing layer across many gateways, with smart failover and unified reporting.",
